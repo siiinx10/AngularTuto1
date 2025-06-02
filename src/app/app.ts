@@ -12,8 +12,13 @@ import { CommonModule } from '@angular/common';
 export class App {
   items = [
     new WishItem('To learn Angular'),
-    new WishItem('Get Coffee'),
+    new WishItem('Get Coffee', true),
     new WishItem('FInd grass')
   ]
   protected title = 'wishlist';
+
+  toggleItem(item : WishItem){
+    item.isComplete = !item.isComplete;
+    console.log(item);
+  }
 }
