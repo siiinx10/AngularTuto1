@@ -13,10 +13,10 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.css'
 })
 export class App {
-  items = [
-    new WishItem('To learn Angular'),
-    new WishItem('Get Coffee', true),
-    new WishItem('Find grass')
+  items : WishItem[] = [
+    // new WishItem('To learn Angular'),
+    // new WishItem('Get Coffee', true),
+    // new WishItem('Find grass')
   ]
 
   newWishText = "";
@@ -26,7 +26,7 @@ export class App {
     //todo : add wish to items array
     //clear the list
     this.items.push(new WishItem(this.newWishText));
-    //this.newWishText = '';
+    this.newWishText = '';
     //dis
   }
 
