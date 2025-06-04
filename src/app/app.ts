@@ -27,6 +27,7 @@ export class App {
     //clear the list
     this.items.push(new WishItem(this.newWishText));
     //this.newWishText = '';
+    //dis
   }
 
   toggleItem(item : WishItem){
