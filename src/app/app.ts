@@ -17,6 +17,11 @@ export class App {
   ]
   protected title = 'wishlist';
 
+  addNewWish(){
+    //todo : add wish to items array
+    //clear the list
+  }
+
   toggleItem(item : WishItem){
     item.isComplete = !item.isComplete;
     console.log(item);
